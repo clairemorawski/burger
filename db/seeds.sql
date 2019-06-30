@@ -9,16 +9,16 @@ VALUES
     ('Hamburger', 0);
 
 INSERT INTO burgers
-    (burger_name)
+    (burger_name, devoured)
 VALUES
     ('Bacon Cheeseburger', 0);
 
 INSERT INTO burgers
-    (burger_name)
+    (burger_name, devoured)
 VALUES
     ('Veggie Burger', 1);
 
 INSERT INTO burgers
-    (burger_name)
+    (burger_name, devoured)
 VALUES
-    ('Lettuce Bun Burger', 0);
+    ('Vegan Burger', 0);

@@ -7,13 +7,14 @@ dotenv.config();
 //mySQL Dependency
 var mysql = require('mysql');
 var { DB_USER, DB_PASS, DB_NAME } = process.env;
+console.log(DB_USER, DB_PASS, DB_NAME);
 
 //Creating mySQL connection
 var config = {
-    port: 3000,
+    port: 3306,
     host: 'localhost',
     user: DB_USER,
-    pass: DB_PASS,
+    password: DB_PASS,
     database: DB_NAME
 };
 
@@ -33,7 +34,7 @@ connection.connect(function (err) {
         console.log('Error connecting: ' + err.stack);
         return;
     } else {
-        console.log('Connection on ' + host);
+        console.log('Connection with ' + host);
     }
 });
 

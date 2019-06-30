@@ -10,9 +10,8 @@ CREATE TABLE burgers (
     -- Makes a string column called "id" which cannot contain null and is a unique id for each burger --
     id INTEGER NOT NULL AUTO_INCREMENT,
     -- Makes a string column called "burger_name" with the name of each burger --
-    burger_name VARCHAR (100) NOT NULL,
+    burger_name VARCHAR(100) NOT NULL,
     -- Makes a boolean called "devoured" --
     devoured BOOLEAN DEFAULT false,
-    PRIMARY KEY
-(id)
+    PRIMARY KEY (id)
 );

@@ -21,7 +21,7 @@ function printQuestionMarks(num) {
 //2. Helper Function to convert object key/value pairs to SQL syntax
 function objtoSql(ob) {
     var arr = [];
-    console.log('What i this obj: ' + ob[0]);
+    console.log('What is this object: ' + ob[0]);
 
     for (var key in ob) {
         var value = ob[key];
@@ -64,11 +64,9 @@ var orm = {
             if (err) {
                 throw err;
             }
-
             cb(result);
         });
     },
-
     updateOne: function (table, objColsVals, condition, cb) {
         console.log('What is this: ' + objColsVals);
         var queryString = 'UPDATE ' + table;
@@ -83,7 +81,6 @@ var orm = {
             if (err) {
                 throw err;
             }
-
             cb(result);
         });
     }

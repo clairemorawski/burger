@@ -25,6 +25,8 @@ var burger = {
             cb(res);
         });
     }
+
+    //create a route to add a burger
 };
 
 module.exports = burger;
