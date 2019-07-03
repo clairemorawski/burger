@@ -13,10 +13,10 @@ var burger = require('../models/burger');
 //Get Route
 router.get('/', function (req, res) {
     burger.selectAll(function (data) {
-        var burgerObject = {
+        var exphbsObject = {
             burger: data
         };
-        res.render('index', burgerObject);
+        res.render('index', exphbsObject);
     });
 });
 

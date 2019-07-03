@@ -2,9 +2,10 @@ $(function () {
     //POST A BURGER THROUGH THE NEXT EVENT
     $('.create-form').on('submit', function (event) {
         event.preventDefault();
+console.log('test');
 
         var newBurger = {
-            name: $('#name')
+            name: $('#burger')
                 .val()
                 .trim(),
             devoured: $('#devoured').val()
@@ -21,7 +22,7 @@ $(function () {
     });
 
     //UPDATE BOOLEAN VALUE THROUGH THE NEXT EVENT
-    $('.devour-burger').on('click', function (event) {
+    $('.devour-burger').on('click', function(event) {
         event.preventDefault();
         var id = $(this).data('id');
 
